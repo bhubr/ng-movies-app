@@ -1,1 +1,111 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+  margin: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background: #245;
+  color: #eee;
+  padding: 1em;
+}
+
+nav a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+}
+
+aside.sidebar {
+  margin-right: 3%;
+  width: 25%;
+}
+
+aside.sidebar .sidebar-label {
+  display: block;
+  margin: 1.25em 0 .5em 0;
+  font-weight: 500;
+}
+
+.grid {
+  width: 72%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25em;
+  margin-bottom: 2em;
+}
+
+.movies-list .card {
+  width: 23%;
+}
+
+.card-header img {
+  border-top-left-radius: .25em;
+  border-top-right-radius: .25em;
+  width: 100%;
+}
+
+.card-body {
+  position: relative;
+  padding: 1em;
+}
+
+.card-body h3 {
+  margin: .5em 0;
+}
+
+.movie-rating {
+  position: relative;
+  top: -2em;
+  display: inline-block;
+  background: #222;
+  padding: .25em .75em;
+  color: #ddd;
+  border-radius: .25em;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.movie-rating-good {
+  border-left: 6px solid #28a745;
+}
+
+.movie-rating-average {
+  border-left: 6px solid #ffc107;
+}
+
+.movie-rating-bad {
+  border-left: 6px solid #dc3545;
+}
+
+.movie-release-date {
+  color: #888;
+}
+
+ul.multi-select {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+ul.multi-select li {
+  font-size: 14px;
+  list-style-type: none;
+  padding: .375em .75em;
+  margin: 0 .5em .5em 0;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 16px;
+}
