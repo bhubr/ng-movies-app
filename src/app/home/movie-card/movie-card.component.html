@@ -1,8 +1,8 @@
 <header class="card-header">
-  <img src="https://www.themoviedb.org/t/p/w220_and_h330_face/ic0intvXZSfBlYPIvWXpU1ivUCO.jpg" alt="PAW Patrol: The Movie">
+  <img [src]="movie?.picture" [alt]="movie?.title">
 </header>
 <div class="card-body">
-  <span class="movie-rating movie-rating-good">82%</span>
-  <h3>PAW Patrol: The Movie</h3>
-  <div class="movie-release-date">Aug 9, 2021</div>
+  <span class="movie-rating movie-rating-good">{{movie?.rating}}%</span>
+  <h3>{{movie?.title}}</h3>
+  <div class="movie-release-date">{{movie?.releaseDate|date}}</div>
 </div>

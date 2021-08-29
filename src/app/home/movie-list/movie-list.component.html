@@ -1,23 +1,2 @@
-<article class="card" app-movie-card>
-</article>
-
-<article class="card" app-movie-card>
-</article>
-
-<article class="card" app-movie-card>
-</article>
-
-<article class="card" app-movie-card>
-</article>
-
-<article class="card" app-movie-card>
-</article>
-
-<article class="card" app-movie-card>
-</article>
-
-<article class="card" app-movie-card>
-</article>
-
-<article class="card" app-movie-card>
+<article class="card" app-movie-card *ngFor="let movie of movies" [movie]="movie">
 </article>
