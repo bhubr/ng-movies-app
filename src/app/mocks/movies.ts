@@ -7,6 +7,7 @@ export const MOVIES: Array<Movie> = [
     picture: 'https://www.themoviedb.org/t/p/w220_and_h330_face/lSEr1nphZuCqXli3VziIgCI8Ivf.jpg',
     releaseDate: '2021-07-28',
     rating: 80,
+    genres: ['Action', 'Adventure', 'Comedy']
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const MOVIES: Array<Movie> = [
     picture: 'https://www.themoviedb.org/t/p/w220_and_h330_face/ic0intvXZSfBlYPIvWXpU1ivUCO.jpg',
     releaseDate: '2021-08-09',
     rating: 79,
+    genres: ['Adventure', 'Animation', 'Comedy']
   },
   {
     id: 3,
@@ -21,6 +23,7 @@ export const MOVIES: Array<Movie> = [
     picture: 'https://www.themoviedb.org/t/p/w220_and_h330_face/9dKCd55IuTT5QRs989m9Qlb7d2B.jpg',
     releaseDate: '2021-07-28',
     rating: 79,
+    genres: ['Action', 'Adventure', 'Comedy']
   },
   {
     id: 4,
@@ -28,6 +31,7 @@ export const MOVIES: Array<Movie> = [
     picture: 'https://www.themoviedb.org/t/p/w220_and_h330_face/lq68Z5htr1bjPd8X0U3PBZRcUij.jpg',
     releaseDate: '2021-08-12',
     rating: 82,
+    genres: ['Animation', 'Comedy']
   },
   {
     id: 5,
@@ -35,6 +39,7 @@ export const MOVIES: Array<Movie> = [
     picture: 'https://www.themoviedb.org/t/p/w220_and_h330_face/7p0O4mKYLIhU2E5Zcq9Z3vOZ4e9.jpg',
     releaseDate: '2021-07-22',
     rating: 53,
+    genres: ['Action', 'Crime', 'Drama']
   },
   {
     id: 6,
@@ -42,6 +47,7 @@ export const MOVIES: Array<Movie> = [
     picture: 'https://www.themoviedb.org/t/p/w220_and_h330_face/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg',
     releaseDate: '2021-07-07',
     rating: 78,
+    genres: ['Action', 'Adventure']
   },
   {
     id: 7,
@@ -49,6 +55,7 @@ export const MOVIES: Array<Movie> = [
     picture: 'https://www.themoviedb.org/t/p/w220_and_h330_face/5bFK5d3mVTAvBCXi5NPWH0tYjKl.jpg',
     releaseDate: '2021-07-08',
     rating: 75,
+    genres: ['Animation', 'Comedy']
   },
   {
     id: 8,
@@ -56,5 +63,6 @@ export const MOVIES: Array<Movie> = [
     picture: 'https://www.themoviedb.org/t/p/w220_and_h330_face/hEqw9swA8gFJuNjgWYEypwZfkZg.jpg',
     releaseDate: '2021-08-11',
     rating: 78,
+    genres: ['Action', 'Adventure']
   }
 ]

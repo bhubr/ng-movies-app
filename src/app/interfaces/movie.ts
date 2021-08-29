@@ -4,4 +4,5 @@ export interface Movie {
   picture: string;
   rating: number; 
   releaseDate: string;
+  genres: Array<string>;
 }
