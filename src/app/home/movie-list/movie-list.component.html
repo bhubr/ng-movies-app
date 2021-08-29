@@ -1,2 +1,2 @@
-<article class="card" app-movie-card *ngFor="let movie of movies" [movie]="movie">
+<article class="card" app-movie-card *ngFor="let movie of movies | async" [movie]="movie">
 </article>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Movie } from 'src/app/interfaces/movie';
-import { MOVIES } from 'src/app/mocks/movies';
+import { MovieService } from 'src/app/movie.service';
 
 @Component({
   selector: '[app-movie-list]',
@@ -9,11 +10,12 @@ import { MOVIES } from 'src/app/mocks/movies';
 })
 export class MovieListComponent implements OnInit {
 
-  movies: Array<Movie> = MOVIES;
+  movies: Observable<Movie[]> | null = null;
 
-  constructor() { }
+  constructor(private movieService: MovieService) { }
 
   ngOnInit(): void {
+    this.movies = this.movieService.findAll();
   }
 
 }
