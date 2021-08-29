@@ -2,10 +2,10 @@
   <div class="card-body">
     <h3>Sort</h3>
     <label class="sidebar-label" for="sort-by">Sort results by</label>
-    <select name="sort-by" id="sort-by">
-      <option value="title">Title (A-Z)</option>
+    <select name="sort-by" id="sort-by" [(ngModel)]="sortBy">
       <option value="rating">Rating</option>
-      <option value="release-date">Release date</option>
+      <option value="title">Title (A-Z)</option>
+      <option value="releaseDate">Release date</option>
     </select>
   </div>
 </article>
@@ -22,7 +22,7 @@
       <li>Crime</li>
       <li>Documentary</li>
       <li>Drama</li>
-      <li>Family</li>
+      <!-- <li>Family</li>
       <li>Fantasy</li>
       <li>History</li>
       <li>Horror</li>
@@ -33,7 +33,7 @@
       <li>TV Movie</li>
       <li>Thriller</li>
       <li>War</li>
-      <li>Western</li>
+      <li>Western</li> -->
     </ul>
     <div class="sidebar-label">By min. rating</div>
     <input type="radio" name="filter-rating" id="rating-all" checked>&nbsp;<label for="rating-all">All</label>

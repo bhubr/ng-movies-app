@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MovieService, SortBy } from 'src/app/movie.service';
 
 @Component({
   selector: '[app-home-sidebar]',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private movieService: MovieService) { }
 
   ngOnInit(): void {
+  }
+
+  get sortBy() {
+    return this.movieService.sortBy;
+  }
+
+  set sortBy(sortBy: SortBy) {
+    this.movieService.sortBy = sortBy;
   }
 
 }
